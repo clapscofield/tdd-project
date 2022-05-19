@@ -1,0 +1,3 @@
+O teste unitário pode cobrir funcionalidade (por exemplo: correção de cálculos), características não funcionais (por exemplo, busca de vazamentos de memória) e propriedades estruturais (por exemplo: teste de decisão).
+
+O teste funcional de um sistema envolve testes que avaliam as funções que o sistema deve executar. Os requisitos funcionais podem ser descritos em produtos de trabalho, como especificações de requisitos, de negócios, épicos, histórias de usuários, casos de uso ou especificações funcionais, podendo ainda não estarem documentados. As funções são “o que” o sistema deve fazer.
