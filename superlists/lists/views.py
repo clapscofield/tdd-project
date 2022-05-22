@@ -5,7 +5,7 @@ def home_page(request):
     return render(request, 'home.html')
 
 def view_list(request, list_id):
-    my_list = List.objects.get(id=list_id)
+    my_list = List.objects.get(id = list_id)
     return render(request, 'list.html', {'list': my_list})
 
 def new_list(request):
