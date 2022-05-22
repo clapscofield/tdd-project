@@ -1,0 +1,5 @@
+Nesse processo, primeiro criamos um teste funcional. Verificamos se o teste passa
+se sim seguimos para uma melhoria com refatoração se for necessário.
+Se não passa entramos na caixinha do "código mínimo". Assim, através de pequenas
+modificações no código que são verificadas com o teste de unidade vamos refazendo 
+o ciclo até que os testes de unidade e funcionais passem.
