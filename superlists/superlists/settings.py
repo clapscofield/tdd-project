@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'accounts',
     'lists'
 ]
 
@@ -70,7 +71,15 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'superlists.wsgi.application'
 
-
+AUTH_USER_MODEL = 'accounts.ListUser'
+AUTHENTICATION_BACKENDS = [
+    'accounts.authentication.PasswordlessAuthenticationBackend',
+]
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'clarissestudo@gmail.com'
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
